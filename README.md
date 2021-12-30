@@ -7,8 +7,10 @@ A [Kenneth Reitz](http://kennethreitz.org/bitcoin) Project.
 
 Run locally:
 ```sh
-docker pull kennethreitz/httpbin
-docker run -p 80:80 kennethreitz/httpbin
+python -m pipenv --python 3.7
+python -m pipenv shell
+python -m pipenv install
+docker-compose up
 ```
 
 See http://httpbin.org for more information.
